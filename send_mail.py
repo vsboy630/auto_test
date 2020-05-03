@@ -6,10 +6,10 @@ def sendmail():
     gmail_user = 'YOUR ACCOUNT'
     gmail_password = 'YOUR PWD'
 
-    msg = MIMEText('AirForce Restock')
+    msg = MIMEText('Item Restock')
     msg['Subject'] = 'Test'
     msg['From'] = gmail_user
-    msg['To'] = 'RECEIVER EMAIL'
+    msg['To'] = 'RECEIVER ACCOUNT'
 
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
     server.ehlo()
